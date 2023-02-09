@@ -1,39 +1,45 @@
-<html>  
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>workshop Html</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page panier </title>
 </head>
+<body>
+    <div class="container">
+        <div class="grid- panier">
+             <header>
+                <h1>site e-commerce</h1>
+                <div class="menu">
+                    <ul>
+                        <li><a href="./index.html">accueil</li>
+                        <li><a href="./panier.html">panier</li>
+                    </ul>
+                </div>
+             </header>
+             <!--produits-->
+             <div id="contrainer-produit-panier">
+                <img src="/8c68fbfa825f4dd19b91a159e801513a.jpg" alt="">
+                <img src="/6bdd97600afb4e449e6d9469c3bbbf71.jpg" alt="">
+                <img src="/4c5dfb7a204241e68e589d7a9fe1db37.jpg" alt="">
+                <img src="/2bbb60a0ec0d468599ed125ec6ec6326.jpg" alt="">
+                <img src="/0b0fec89778e460e946b5df5ff9f8b8a.jpg" alt="">
+             <h2>les produits selectionnées</h2>
+             <div class="container-recapitulatif">
+                <div>quantité 1 - nom produit 1</div>
+                <div>2000fcfa - supprimer article</div>
+             </div>
 
-    
-    <body>
-         <div>
-            <h1>bienvenue sur le worskhop de html!</h1>
-            <p> le workshop de html</p>
-            <nav>
-                <form >
-                    search <input type="gomycode">
-                  </form>
-                <ul>
-                    <li>accueil</li>
-                    <li>a propos</li>
-                    <li>travail</li>
-                    <li>CV</li>
-                    <li>contact</li>
-                </ul>
-
-            </nav>
-            <section>a propos</section>
-            <section>travail</section>
-            <section>CV</section>
-            <section>contact</section>
-            <img src="/html/BPJ/FB_IMG_16667758525947517.jpg"alt="">
-             <audio controls>
-               <source src="/html/BPJ/Baet.mp3">
-             </audio>
-              <Video controls>
-               <source src="/html/BPJ/_Agalawal(240p).mp4CD">
-              </Video>
-             
-         </div>
-    </body>
-
+             <div class="container-montant-total">
+              <div> Montant total =2000 fcfa</div>
+              <div>vider le panier</div> 
+             </div>
+             </div>
+             <footer>footer</footer>
+        </div>
+    </div>
+    <script src="./js/dadtaApi.js"></script>
+    <script src="./js/panier.js"></script>
+</body>
 </html>

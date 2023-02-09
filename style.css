@@ -1,0 +1,132 @@
+@import "./media";
+@import ".variables";
+@import ".mixins.scss";
+
+:root{
+  font-size: 62.5%;  
+}
+
+. {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    a {
+        text-decoration: none;
+        &:hover {
+            color: red;
+        }
+    }
+
+    h1{
+        font-size: 3 rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    div{
+        font-size: 1.6rem;
+    }
+}
+
+//----------------debut de la mise en place de la grille index.html------------------
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mise-en-page-produit {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    "header header"
+    "produit_photo produit"
+    "footer footer";
+   
+   .mise-en-page-produit {
+    border: solid 1px  black;
+    background-color:  bisque;
+   }
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    .menu {
+        background-color: aquamarine;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li {
+                margin-right: 3rem;
+                margin-left: 3rem;
+            }
+        }
+    }
+}
+
+.produit {
+    grid-area: produit;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+
+ .grid-panier{
+    display: grid;
+    grid-template-colums: auto;
+    grid-template-rows;
+    gris-row-gap: 1rem; 
+    grid-template-areas:
+      "header"
+      "controle-produit-panier"
+      "footer"
+      ;
+} 
+
+#controle-produit-panier{
+    grid-area: "controle-produit-panier";
+    display: flex;
+    flex-direction: column;
+    min-width: 88vw;
+
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.contrainer-recapitulatif{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    algn-items: centre;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 3rem;
+    
+}   
+
+.container-montant-total{
+    background-color: rgb(212, 144, 16);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 3rem;
+}
+
